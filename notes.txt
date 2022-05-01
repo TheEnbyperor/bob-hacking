@@ -1,0 +1,68 @@
+Chips
+IC2:  YD3082EESA RS422/RS485 transceiever
+BUCK: AP1509 Buck DC-DC converter, 3V3
+
+Front board programming header pinout (viewed from ESP32 side)
+
+      _____ ESP32 pin 25 (GPIO0)
+     / ____ ESP32 pin 3 (ChipPU)
+    / / ___ ESP32 pin 35 (program port)
+   / / / __ ESP32 pin 34 (program port)
+  / / / /
+ o o o o
+o o o o
+ \ \ \ \___ GND
+  \ \ \____ GND
+   \ \_____ GND
+    \______ 3V3 
+
+6P6C connector pinout (viewed from connecor underside)
+
+     ______ ESP32 pin 9
+    / _____ VIN (unknown voltage)
+   / / ____ RS422/RS485 A
+  / / / ___ ESP32 pin 11
+ / / / /
+o o o o
+ o o o o
+  \ \ \ \__ ESP32 pin 33
+   \ \ \___ GND
+    \ \____ RS422/RS485 B
+     \_____ ESP32 pin 28
+
+Display connector
+
+1                                 18
+o o o o o o o o o o o o o o o o o o
+ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \__ GND
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \___ GND
+   \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \____ GND
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_____ GND
+     \ \ \ \ \ \ \ \ \ \ \ \ \ \______ Unknown
+      \ \ \ \ \ \ \ \ \ \ \ \ \_______ Unknown
+       \ \ \ \ \ \ \ \ \ \ \ \________ Unknown
+        \ \ \ \ \ \ \ \ \ \ \_________ Unknown
+         \ \ \ \ \ \ \ \ \ \__________ 3V3
+          \ \ \ \ \ \ \ \ \___________ 3V3
+           \ \ \ \ \ \ \ \____________ Unkonwn
+            \ \ \ \ \ \ \_____________ ESP32 pin 31
+             \ \ \ \ \ \______________ ESP32 pin 30
+              \ \ \ \ \_______________ ESP32 pin 16
+               \ \ \ \________________ ESP32 pin 23
+                \ \ \_________________ ESP32 pin 27
+                 \ \__________________ ESP32 pin 28
+                  \___________________ GND
+
+Trasceiever
+RO:    ESP32 pin 36
+RE/DE: ESP32 pin 29
+D1:    ESP32 pin 37
+
+Other items
+
+Button 1:     ESP32 pin 8
+Button 2/3:   ESP32 pin 7
+Button 4:     ESP32 pin 6
+Touch sensor: ESP32 pin 12
+LEDs:         ESP32 pin 13
+Buzzer:       ESP32 pin 10

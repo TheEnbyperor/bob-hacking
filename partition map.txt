@@ -1,0 +1,76 @@
+entry 0:
+  label      : nvs
+  offset     : 0x9000
+  length     : 16384
+  type       : 1 [DATA]
+  sub type   : 2 [WIFI]
+
+entry 1:
+  label      : otadata
+  offset     : 0xd000
+  length     : 8192
+  type       : 1 [DATA]
+  sub type   : 0 [OTA]
+
+entry 2:
+  label      : phy_init
+  offset     : 0xf000
+  length     : 4096
+  type       : 1 [DATA]
+  sub type   : 1 [RF]
+
+entry 3:
+  label      : factory
+  offset     : 0x10000
+  length     : 1843200
+  type       : 0 [APP]
+  sub type   : 0 [FACTORY]
+
+entry 4:
+  label      : ota_0
+  offset     : 0x1e0000
+  length     : 1843200
+  type       : 0 [APP]
+  sub type   : 16 [ota_0]
+
+entry 5:
+  label      : ota_1
+  offset     : 0x3b0000
+  length     : 1843200
+  type       : 0 [APP]
+  sub type   : 17 [ota_1]
+
+entry 6:
+  label      : storage
+  offset     : 0x572000
+  length     : 3145728
+  type       : 1 [DATA]
+  sub type   : 130 [unknown]
+
+entry 7:
+  label      : aws_credentials
+  offset     : 0x872000
+  length     : 12288
+  type       : 1 [DATA]
+  sub type   : 2 [WIFI]
+
+entry 8:
+  label      : stm32_factory
+  offset     : 0x875000
+  length     : 65536
+  type       : 1 [DATA]
+  sub type   : 153 [unknown]
+
+entry 9:
+  label      : firmware_stm32
+  offset     : 0x885000
+  length     : 65536
+  type       : 1 [DATA]
+  sub type   : 153 [unknown]
+
+entry 10:
+  label      : storage_font
+  offset     : 0x895000
+  length     : 1048576
+  type       : 1 [DATA]
+  sub type   : 153 [unknown]
