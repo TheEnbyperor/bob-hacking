@@ -66,3 +66,8 @@ Button 4:     ESP32 pin 6
 Touch sensor: ESP32 pin 12
 LEDs:         ESP32 pin 13
 Buzzer:       ESP32 pin 10
+
+Storage partition
+SPIFFS, SPIFFS_OBJ_NAME_LEN seems to be 64
+Block size 8192, page size 256
+Seemingly not quite standard, as whilst possible to read output files are nonsense

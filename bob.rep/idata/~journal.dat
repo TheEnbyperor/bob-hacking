@@ -1,0 +1,6 @@
+IADD:00000000:/factory_out.bin
+IDSET:/factory_out.bin:7f011b5f3356658931824900
+IADD:00000001:/bob_front_panel_flash.bin
+IDSET:/bob_front_panel_flash.bin:7f01195b1356721734086000
+IADD:00000002:/bootrom.elf
+IDSET:/bootrom.elf:7f011974d357056309420500
